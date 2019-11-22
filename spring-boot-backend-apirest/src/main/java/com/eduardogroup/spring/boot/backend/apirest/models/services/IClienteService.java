@@ -17,4 +17,9 @@ import com.eduardogroup.spring.boot.backend.apirest.models.entity.Cliente;
 public interface IClienteService {
 
 	public List<Cliente> findAll();
+	public Cliente findById(Long id);
+	public Cliente create(Cliente cli);
+	public String update(Long id,Cliente cli);
+	
+	public void delete(Long id);
 }
